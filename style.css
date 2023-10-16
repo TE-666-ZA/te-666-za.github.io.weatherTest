@@ -1,0 +1,49 @@
+.h1{
+    text-align: center;
+    font-size: xxx-large;
+    background-color: gray;
+}
+.imgBack{
+z-index: -1;
+}
+.weatherDash{
+    position: relative;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+}
+#temp{
+    font-size: x-large;
+    position: absolute;
+    z-index: +2;
+    text-align: center;
+    top: 5%;
+}
+#wind{
+    font-size: x-large;
+    position: absolute;
+    z-index: +2;
+   text-align: center;
+    top:60%
+}
+#descr{
+    text-align: center;
+    font-size: x-large;
+    position: absolute;
+    z-index: +2;
+    top:85%
+}
+
+@media (min-height : 500px) {
+   .imgBack{
+       max-height: 84vh;
+       margin: 0;
+   }
+  .weatherDash{
+      margin: 0;
+  }
+    body{
+        margin: 0;
+    }
+}
